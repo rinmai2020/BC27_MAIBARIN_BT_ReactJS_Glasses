@@ -1,0 +1,37 @@
+.main {
+	z-index: 1;
+}
+
+.background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(/public/glassesImage/background.jpg) center / cover
+		no-repeat;
+	filter: brightness(70%);
+	z-index: -999;
+}
+
+.img-glasses {
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	transform: translateX(-50%);
+	opacity: 0.75;
+	transition: all 0.5s;
+}
+
+.info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: rgba(255, 88, 23, 0.5);
+	width: 100%;
+	text-align: left;
+}
+
+.pointer {
+	cursor: pointer;
+}
