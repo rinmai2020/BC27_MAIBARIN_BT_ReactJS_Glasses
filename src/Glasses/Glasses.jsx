@@ -14,7 +14,7 @@ export default class Glasses extends Component {
       productItem: data[0],
     };
   }
-
+  //1: Định nghĩa hàm
   handleSelect = (product) => {
     this.setState({ productItem: product, isOpen: false });
     setTimeout(() => {
@@ -29,6 +29,7 @@ export default class Glasses extends Component {
         <div className="background"></div>
         <Header />
         <Info product={productItem} isOpen={isOpen} />
+        {/* 2: truyền hàm handleSelect xuống ProductList  */}
         <ProductList products={data} onSelect={this.handleSelect} />
       </div>
     );
